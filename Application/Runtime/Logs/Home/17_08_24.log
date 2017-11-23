@@ -1,0 +1,25 @@
+[ 2017-08-24T10:23:55+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: page G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `jia_api` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `jia_api` LIMIT 1,10   [ RunTime:0.0050s ]
+
+[ 2017-08-24T10:24:25+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=147 ) LIMIT 0,15   [ RunTime:0.0280s ]
+
+[ 2017-08-24T10:24:30+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=147 ) LIMIT 15,15   [ RunTime:0.0080s ]
+
+[ 2017-08-24T11:05:45+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [2000] mysqlnd cannot connect to MySQL 4.1+ using the old insecure authentication. Please use an administration tool to reset your password with the command SET PASSWORD = PASSWORD('your_existing_password'). This will store a new, and more secure, hash value in mysql.user. If this user is used in other scripts executed by PHP 5.2 or earlier you might need to remove the old-passwords flag from your my.cnf file
+

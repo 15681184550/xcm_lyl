@@ -1,0 +1,135 @@
+[ 2017-09-13T09:33:06+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0310s ]
+
+[ 2017-09-13T09:33:08+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+NOTIC: [8] Undefined index: page G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 108 行.
+SQL: SELECT * FROM `jia_api` LIMIT 1,10   [ RunTime:0.0480s ]
+
+[ 2017-09-13T09:33:10+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+SQL: SELECT * FROM `jia_api` LIMIT 2,10   [ RunTime:0.0010s ]
+
+[ 2017-09-13T10:58:11+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T10:58:17+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuTypeList.html
+SQL: SELECT * FROM `cai_type`  [ RunTime:0.0290s ]
+
+[ 2017-09-13T10:58:19+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 0,15   [ RunTime:0.0610s ]
+
+[ 2017-09-13T10:58:24+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 15,15   [ RunTime:0.0020s ]
+
+[ 2017-09-13T10:59:40+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuShow.html?id=2990
+NOTIC: [2] file_get_contents(http://www.tngou.net/api/cook/show?id=2990):  G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 164 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 167 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 168 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 169 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 170 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 171 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 172 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 173 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 174 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 175 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 176 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 177 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 178 行.
+NOTIC: [8] Trying to get property of non-object G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 179 行.
+
+[ 2017-09-13T11:00:32+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 30,15   [ RunTime:0.0020s ]
+
+[ 2017-09-13T11:13:30+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuTypeList.html
+SQL: SELECT * FROM `cai_type`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:13:31+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 0,15   [ RunTime:0.0040s ]
+
+[ 2017-09-13T11:13:34+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 15,15   [ RunTime:0.0050s ]
+
+[ 2017-09-13T11:15:43+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=62 ) LIMIT 0,15   [ RunTime:0.0030s ]
+
+[ 2017-09-13T11:20:20+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0020s ]
+
+[ 2017-09-13T11:20:21+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:20:22+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:20:22+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:21:01+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0020s ]
+
+[ 2017-09-13T11:21:03+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0000s ]
+
+[ 2017-09-13T11:21:04+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:21:09+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0000s ]
+
+[ 2017-09-13T11:44:32+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0030s ]
+
+[ 2017-09-13T11:44:44+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:45:17+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:45:26+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:46:44+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:46:49+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:46:50+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:47:32+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:47:34+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:47:48+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+NOTIC: [8] Undefined index: page G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 108 行.
+SQL: SELECT * FROM `jia_api` LIMIT 1,10   [ RunTime:0.0010s ]
+
+[ 2017-09-13T11:48:10+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0020s ]
+
+[ 2017-09-13T11:48:12+08:00 ] 127.0.0.1 /
+NOTIC: [8] Undefined index: memberId G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 11 行.
+SQL: SELECT * FROM `jiu`  [ RunTime:0.0000s ]
+

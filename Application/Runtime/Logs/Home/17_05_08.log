@@ -1,0 +1,50 @@
+[ 2017-05-08T09:31:47+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0300s ]
+
+[ 2017-05-08T09:31:57+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0010s ]
+
+[ 2017-05-08T09:32:45+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0060s ]
+
+[ 2017-05-08T09:33:21+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0000s ]
+
+[ 2017-05-08T09:38:19+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0000s ]
+
+[ 2017-05-08T09:52:29+08:00 ] 127.0.0.1 /index.php/Home/Index/caiPuListAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `cai_list` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `cai_list` WHERE ( parent_id=10 ) LIMIT 0,15   [ RunTime:0.0000s ]
+
+[ 2017-05-08T09:52:42+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: page G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `jia_api` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `jia_api` LIMIT 1,10   [ RunTime:0.0010s ]
+

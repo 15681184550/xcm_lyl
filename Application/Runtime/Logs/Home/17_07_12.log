@@ -1,0 +1,8 @@
+[ 2017-07-12T17:43:50+08:00 ] 127.0.0.1 /index.php/Home/Index/jiaApiAjax.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: page G:\xcm.party\Application\Home\Controller\IndexController.class.php 第 108 行.
+SQL: SHOW COLUMNS FROM `jia_api` [ RunTime:0.3030s ]
+SQL: SELECT * FROM `jia_api` LIMIT 1,10   [ RunTime:0.0230s ]
+

@@ -1,7 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-
+use Home\Lib\SendNote;
 class IndexController extends Controller {
     /**
      * 首页
@@ -9,18 +9,16 @@ class IndexController extends Controller {
     public function index()
     {
 
-        $mId = $_COOKIE['memberId'];
-        if($mId){
-            $m = M('user')->where('id='.$mId)->find();
-
-            $this->assign('m', $m);
-        }
-
-        $data = M('users')->select();
-        dump($data);die;
-        $this->assign('data', $data);
-        $this->display('Mui/index');
     }
 
+    /**
+     * 发送短信测试
+     */
+    public function sendMsg(){
+        $send = new SendNote();
+//        $send -> sendVerify(15681184550,333);                                         //短信验证码
+//        $send -> sendShipment(15681184550,'徐昌茂','高级大苹果','12345677654321');    //短信通知
+        die;
+    }
 
 }

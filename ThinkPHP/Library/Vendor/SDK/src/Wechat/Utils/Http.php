@@ -29,7 +29,7 @@ namespace Overtrue\Wechat\Utils;
 /**
  * Http请求类.
  *
- * from https://github.com/dsyph3r/curl-php/blob/master/lib/Network/Curl/Curl.php
+ * from https://github.com/dsyph3r/curl-php/blob/master/Lib/Network/Curl/Curl.php
  */
 class Http
 {

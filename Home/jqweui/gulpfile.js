@@ -104,8 +104,8 @@ gulp.task('ejs', function () {
 });
 
 gulp.task('copy', function() {
-  gulp.src(['./src/lib/**/*'])
-    .pipe(gulp.dest('./dist/lib/'));
+  gulp.src(['./src/Lib/**/*'])
+    .pipe(gulp.dest('./dist/Lib/'));
 
   gulp.src(['./demos/images/*.*'])
     .pipe(gulp.dest('./dist/demos/images/'));

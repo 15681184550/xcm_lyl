@@ -1,158 +1,238 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="renderer" content="webkit">
-	<meta http-equiv="Cache-Control" content="no-siteapp" />
-	<title>徐昌茂的个人网站</title>
-
-	<meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
-	<meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
-
-	<!--[if lt IE 9]>
-	<meta http-equiv="refresh" content="0;ie.html" />
-	<![endif]-->
-	<link href="__PUBLIC__/img/1.jpg" rel="shortcut icon" />
-	<link rel="shortcut icon" href="favicon.ico">
-	<link href="__PUBLIC__/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-	<link href="__PUBLIC__/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-	<link href="__PUBLIC__/css/animate.min.css" rel="stylesheet">
-	<link href="__PUBLIC__/css/style.min.css?v=4.1.0" rel="stylesheet">
+	<meta charset="UTF-8">
+	<title></title>
+	<!--注释: 宽度在320x1.3范围内,px不会发生改变-->
+	<meta name="viewport" content="width=320,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" href="__PUBLIC__/jqweui/dist/css/jquery-weui.min.css?v=1">
+	<link rel="stylesheet" href="__PUBLIC__/jqweui/dist/css/jquery-weui.css?v=3">
+	<script src="__PUBLIC__/js/jquery-2.1.4.js"></script>
+	<script src="__PUBLIC__/ini.js?v=3"></script>
 </head>
-
-<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
-<div id="wrapper">
-	<!--左侧导航开始-->
-	<nav class="navbar-default navbar-static-side" role="navigation">
-		<div class="nav-close"><i class="fa fa-times-circle"></i>
-		</div>
-		<div class="sidebar-collapse">
-			<ul class="nav" id="side-menu">
-				<li class="nav-header">
-					<div class="dropdown profile-element">
-						<span><img alt="image" width="64px" height="64px" class="img-circle" src="__PUBLIC__/img/1.jpg"/></span>
-						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear">
-                               <span class="block m-t-xs"><strong class="font-bold">Beaut-zihan</strong></span>
-                                <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
-                                </span>
-						</a>
-						<ul class="dropdown-menu animated fadeInRight m-t-xs">
-							<li><a class="J_menuItem" href="form_avatar.html">修改头像</a>
-							</li>
-							<li><a class="J_menuItem" href="profile.html">个人资料</a>
-							</li>
-							<li><a class="J_menuItem" href="contacts.html">联系我们</a>
-							</li>
-							<li><a class="J_menuItem" href="mailbox.html">信箱</a>
-							</li>
-							<li class="divider"></li>
-							<li><a href="login.html">安全退出</a>
-							</li>
-						</ul>
-					</div>
-					<div class="logo-element">H+
-					</div>
-				</li>
-				<li>
-					<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">页面</span><span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a class="J_menuItem" href="{:U('contacts')}">朋友信息</a>
-						</li>
-						<li><a class="J_menuItem" href="profile.html">个人资料</a>
-						</li>
-					</ul>
-				</li>
-
-				<li>
-					<a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">数据管理</span><span class="fa arrow"></span></a>
-					<ul class="nav nav-second-level">
-						<li><a class="J_menuItem" onclick="goSave()" id="goSave" href="javascript:;">编辑朋友信息</a></li>
-						<!--<li><a class="J_menuItem" onclick="goSave()" href="{:U('dataFriend')}">编辑朋友信息</a></li>-->
-					</ul>
-				</li>
-
-			</ul>
-		</div>
-	</nav>
-	<!--左侧导航结束-->
-	<!--右侧部分开始-->
-	<div id="page-wrapper" class="gray-bg dashbard-1">
-		<div class="row border-bottom">
-			<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-				<div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-					<form role="search" class="navbar-form-custom" method="post" action="search_results.html">
-						<div class="form-group">
-							<input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
-						</div>
-					</form>
-				</div>
-			</nav>
-		</div>
-		<div class="row content-tabs">
-			<button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
-			</button>
-			<nav class="page-tabs J_menuTabs">
-				<div class="page-tabs-content">
-					<a href="javascript:;" class="active J_menuTab" data-id="{:U('index')}">首页</a>
-				</div>
-			</nav>
-			<button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
-			</button>
-			<div class="btn-group roll-nav roll-right">
-				<button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span>
-
-				</button>
-				<ul role="menu" class="dropdown-menu dropdown-menu-right">
-					<li class="J_tabShowActive"><a>定位当前选项卡</a>
-					</li>
-					<li class="divider"></li>
-					<li class="J_tabCloseAll"><a>关闭全部选项卡</a>
-					</li>
-					<li class="J_tabCloseOther"><a>关闭其他选项卡</a>
-					</li>
-				</ul>
+<style>
+	html{font-size:12px;min-width: 100%;}
+	body{padding: 0;margin: 0 auto;width: 10rem!important;}
+	ul{list-style:none;  }
+	*{box-sizing:border-box;  -moz-box-sizing:border-box; /* Firefox */  -webkit-box-sizing:border-box; /* Safari */}
+	.seekInput{width: 100%;vertical-align: top;border: none;outline:medium;height: 100%;font-size: 12px;text-align: center;}
+	.xImgBox{position: absolute;right: 10px;top: 0;height: 24px;width: 15px;text-align: center;display: none;}
+	.seekBtn{position: absolute;right: 10px;top: 8px;color: #333;font-size: 0.4rem;height: 24px;line-height: 24px;}
+	.inputBox{height: 24px;line-height: 24px;padding-left: 20px;padding-right: 25px;background: url('__PUBLIC__/img/seek.png') left center / 18px no-repeat;position: relative;}
+	.padRight1rem{padding-right: 0rem;}
+	.seekBtn{display: none;}
+	.typeListBox{background: white;font-size: 12px;text-align: center;color: #555;}
+	.typeList{float: left;width: 25%;padding: 10px 5px;}
+	.typeList:active{background: #ECECEC;}
+	.listImgDiv{border-radius: 50%;overflow: hidden;width: 40px;height: 40px;margin: 0 auto;}
+	.shopPirce{color: #FE5455;font-size: 0.338rem;padding-right: 20px;}
+	.shopBox{position: relative;padding: 0.1rem;}
+	.goShop{width: 0.45rem;position: absolute;top: 0.08rem;right: 5px;z-index: 50;}
+	.shopName{word-break: break-all;-webkit-line-clamp:2;overflow: hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-box-orient: vertical;font-size: 0.338rem;color: #333;padding: 3px;height: 0.96rem;line-height: 0.46rem;}
+	.shopImgDiv{height: 4rem;width: 100%;border: 1px solid #DDD;}
+	.shopList{float: left;width: 50%;padding: 5px;}
+	#bottumBox{width: 100%;height: 45px;position: fixed;z-index: 100;bottom: 0;background: #FFF;}
+	.caiDan{float: left;width: 25%;padding-top: 3px;color: #8a8a8a;}
+	.caiDanImgDiv{width: 20px;height: 20px;margin: 0 auto;}
+	.caiDanImg{width: 100%;height: 100%;vertical-align: top;}
+	.caiDanText{padding-top: 2px;font-size: 12px;text-align: center;}
+	.activeCaiDanText{color: #FE5455;}
+</style>
+<body style="background: #F4F4F4;">
+<!--轮播预留位置-->
+<div style="height: 5.6rem;">
+	<div class="swiper-container" data-space-between='10' data-pagination='.swiper-pagination' data-autoplay="1000">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<img onclick="location.href='http://www.baidu.com'" src="__PUBLIC__/csImg/bann1.jpg" style="width: 100%;height: 5.6rem" alt="">
 			</div>
-			<a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+			<div class="swiper-slide">
+				<img onclick="location.href='http://www.baidu.com'" src="__PUBLIC__/csImg/bann2.jpg" style="width: 100%;height: 5.6rem" alt="">
+			</div>
 		</div>
-		<div class="row J_mainContent" id="content-main">
-			<iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="{:U('contacts')}" frameborder="0" data-id="{:U('contacts')}" seamless></iframe>
-		</div>
-		<div class="footer">
-			<div class="pull-right">&copy; 2014-2015 <a href="http://www.zi-han.net/" target="_blank">zihan's blog</a>
+		<div class="swiper-pagination"></div>
+	</div>
+</div>
+<!--搜索框-->
+<div style="padding: 8px;position: relative;">
+	<div class="padRight1rem">
+		<div style="background: white;border-radius: 5px;padding-left: 5px;">
+			<div class="inputBox">
+				<input type="text" placeholder="请输入关键字..." class="seekInput">
+				<div class="xImgBox">
+					<img src="__PUBLIC__/img/x.png" style="height: 8px;margin-bottom: 4px;" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
-	<!--右侧部分结束-->
+	<div class="seekBtn">搜索</div>
 </div>
-<script src="__PUBLIC__js/jquery.min.js?v=2.1.4"></script>
-<script src="__PUBLIC__js/bootstrap.min.js?v=3.3.6"></script>
-<script src="__PUBLIC__js/jquery.metisMenu.js"></script>
-<script src="__PUBLIC__js/jquery.slimscroll.min.js"></script>
-<script src="__PUBLIC__js/layer.min.js"></script>
-<script src="__PUBLIC__js/hplus.min.js?v=4.1.0"></script>
-<script type="text/javascript" src="__PUBLIC__js/contabs.min.js"></script>
-<script src="__PUBLIC__js/pace.min.js"></script>
-<script src="__PUBLIC__layer/layer.js"></script>
+<!--菜单九宫格-->
+<div class="typeListBox">
+	<div class="typeList">
+		<div class="listImgDiv">
+			<img src="__PUBLIC__/img/jiFen.png" style="width: 100%;height: 100%;" alt="">
+		</div>
+		<div style="padding-top: 2px;">积分签到</div>
+	</div>
+	<div class="typeList">
+		<div class="listImgDiv">
+			<img src="__PUBLIC__/img/tuiJian.png" style="width: 100%;height: 100%;" alt="">
+		</div>
+		<div style="padding-top: 2px;">推荐商品</div>
+	</div>
+	<div class="typeList">
+		<div class="listImgDiv">
+			<img src="__PUBLIC__/img/xinPing.png" style="width: 100%;height: 100%;" alt="">
+		</div>
+		<div style="padding-top: 2px;">新品上市</div>
+	</div>
+	<div class="typeList">
+		<div class="listImgDiv">
+			<img src="__PUBLIC__/img/baoYou.png" style="width: 100%;height: 100%;" alt="">
+		</div>
+		<div style="padding-top: 2px;">卖家包邮</div>
+	</div>
+
+	<div style="clear: both;"></div>
+</div>
+<!--推荐产品-->
+<div style="margin-top: 15px;">
+	<div id="product" style="background: #F9F9F9;">
+		<div class="shopList">
+			<div style="background: white;">
+				<div class="shopImgDiv">
+					<img src="__PUBLIC__/csImg/shopList.jpg" alt="" style="height: 4rem;width: 100%;">
+				</div>
+				<div class="shopName">
+					精品棕色亚麻一级500g精品棕色亚麻一级500g精品棕色亚麻一级500g
+				</div>
+				<div class="shopBox">
+					<div class="shopPirce">￥ 6.90</div>
+					<img class="goShop" src="__PUBLIC__/img/shopCar.png" onclick="goShop(this)" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="shopList">
+			<div style="background: white;">
+				<div class="shopImgDiv">
+					<img src="__PUBLIC__/csImg/shopList.jpg" alt="" style="height: 4rem;width: 100%;">
+				</div>
+				<div class="shopName">
+					精品棕色亚麻一级50
+				</div>
+				<div class="shopBox">
+					<div class="shopPirce">￥ 6.90</div>
+					<img class="goShop" src="__PUBLIC__/img/shopCar.png" onclick="goShop(this)" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="shopList">
+			<div style="background: white;">
+				<div class="shopImgDiv">
+					<img src="__PUBLIC__/csImg/shopList.jpg" alt="" style="object-fit:cover;height: 4rem;width: 100%;">
+				</div>
+				<div class="shopName">
+					精品棕色亚麻一级500g精品棕色亚麻一级500g精品棕色亚麻一级500g
+				</div>
+				<div class="shopBox">
+					<div class="shopPirce">￥ 6.90</div>
+					<img class="goShop" src="__PUBLIC__/img/shopCar.png" onclick="goShop(this)" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="shopList">
+			<div style="background: white;">
+				<div class="shopImgDiv">
+					<img src="__PUBLIC__/csImg/shopList.jpg" alt="" style="height: 4rem;width: 100%;">
+				</div>
+				<div class="shopName">
+					精品棕色亚麻一级50
+				</div>
+				<div class="shopBox">
+					<div class="shopPirce">￥ 6.90</div>
+					<img class="goShop" src="__PUBLIC__/img/shopCar.png" onclick="goShop(this)" alt="">
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+<div style="height: 50px;"></div>
+<!--底部菜单-->
+<div id="bottumBox">
+	<div class="caiDan">
+		<div class="caiDanImgDiv">
+			<img src="__PUBLIC__/img/index_on.png" class="caiDanImg" alt="">
+		</div>
+		<div class="caiDanText activeCaiDanText">首页</div>
+	</div>
+	<div class="caiDan">
+		<div class="caiDanImgDiv">
+			<img src="__PUBLIC__/img/perSon.png" data_onImg="__PUBLIC__/img/perSon_on.png" class="caiDanImg" alt="">
+		</div>
+		<div class="caiDanText">会员中心</div>
+	</div>
+	<div class="caiDan">
+		<div class="caiDanImgDiv">
+			<img src="__PUBLIC__/img/perSon.png" data_onImg="__PUBLIC__/img/perSon_on.png" class="caiDanImg" alt="">
+		</div>
+		<div class="caiDanText">会员中心</div>
+	</div>
+	<div class="caiDan">
+		<div class="caiDanImgDiv">
+			<img src="__PUBLIC__/img/perSon.png" data_onImg="__PUBLIC__/img/perSon_on.png" class="caiDanImg" alt="">
+		</div>
+		<div class="caiDanText">会员中心</div>
+	</div>
+</div>
+<script src="__PUBLIC__/jqweui/dist/js/jquery-weui.min.js"></script>
+<script src="__PUBLIC__/jqweui/dist/js/jquery-weui.js"></script>
+<script type='text/javascript' src='__PUBLIC__/jqweui/dist/js/swiper.min.js' charset='utf-8'></script>
 <script>
-	function goSave(){
-		//prompt层
-		layer.prompt({title: '请输入口令', formType: 1}, function(pass, index){
-			layer.close(index);
-			if(pass == '123'){
-				$('#goSave').attr('onclick','');
-				$('#goSave').attr('href',"{:U('dataFriend')}");
-				$('#goSave').click();
-			}else{
-				layer.alert('你龟儿口令错咯，不能点进去', {
-					icon: 2,
-					skin: 'layer-ext-moon' //该皮肤由layer.seaning.com友情扩展。关于皮肤的扩展规则，去这里查阅
-				})
-			}
+	$(function(){
+		var mySwiper = new Swiper('.swiper-container', {
+			speed: 400,
+			spaceBetween: 0,
+			pagination: '.swiper-pagination',
+			autoplay:3000,
+			autoplayDisableOnInteraction : false,
+			loop:true
 		});
+	});
+	/*搜索输入框获取光标显示搜索按钮*/
+	$('.seekInput').focus(function(){
+		$('.padRight1rem').css('padding-right','1rem');
+		$('.seekBtn').show();
+	});
+	/*搜索输入框失去光标显示搜索按钮*/
+	$('.seekInput').blur(function(){
+		setTimeout(function(){
+			$('.padRight1rem').css('padding-right','0rem');
+			$('.seekBtn').hide();
+		},200);
+	});
+	/*监控输入框内容*/
+	$(".seekInput").on("input propertychange", function() {
+		var str = $('.seekInput').val();
+		if(str){
+			$(".xImgBox").show();
+		}else{
+			$(".xImgBox").hide();
+		}
+	});
+	/*清空输入框内容*/
+	$(".xImgBox").click(function(){
+		$('.seekInput').val('');
+	})
+	/*点击搜索*/
+	$('.seekBtn').click(function(){
+		alert('搜索')
+	});
+	/*点击购物车*/
+	function goShop(obj){
+		alert('购物车')
 	}
 </script>
 </body>
